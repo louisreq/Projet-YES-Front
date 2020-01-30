@@ -14,9 +14,47 @@
   border-radius: 50%;
   background:#b4b4b4;
 }
-        [class*="col-"] {
-/*          background-color: lightgreen;
-          border: 2px solid black;
+       
+
+p , {
+  font-size: 17px
+}
+legend{
+  font-size: 25px
+}
+
+  .image
+{
+
+
+width: 100%;
+border-radius: 20px;
+border:2px lightgrey solid;
+
+
+}
+  .image1
+{
+
+
+width: 100%;
+border-radius: 20px;
+border:2px lightgrey solid;
+
+}
+.l2
+
+{
+
+
+width: 100%;
+
+}
+
+
+ [class*="col-"] {
+         /*background-color: lightgreen;*/
+          /*border: 2px solid black;*/
           border-radius: 6px;*/
           line-height: 26px;
           text-align: left;
@@ -40,3 +78,113 @@
 
       }
 */
+
+span{
+  font-size: 35px
+
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.custom-checkbox {
+  /* Presentation */
+  font-size: 50px
+}
+
+/* Required Styling */
+
+label input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  margin-left: 2em;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-checkbox .glyphicon {
+  color: gold;
+  position: absolute;
+  top: 0.4em;
+  left: -1.25em;
+  font-size: 0.75em;
+}
+
+.custom-checkbox .glyphicon-star-empty {
+  color: gray;
+}
+
+.custom-checkbox .glyphicon-star {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.custom-checkbox:hover .glyphicon-star{
+  opacity: 0.5;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .glyphicon-star {
+  opacity: 1;
+}
+
+
+/*.navbar {
+  overflow: hidden;
+ background-color: #333;
+}*/
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*.dropdown {
+  float: left;
+  overflow: hidden;
+}*/
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/*.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}*/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

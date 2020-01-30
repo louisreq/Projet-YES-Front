@@ -1,16 +1,18 @@
-
-<!DOCTYPE html>
+<!D<!DOCTYPE html>
 <html>
     <head>
       <meta charset="utf-8" />
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">      
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css_for_all.css">
+      
 
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="logo3.png" alt="">
@@ -19,29 +21,41 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-           
+
+
+
+
+
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="home2.html">Accueil</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="About.html">A propos</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="apropos.html">A propos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="alertes.html">Alertes</a>
+              <li class="nav-item ">
+                <div class="dropdown">
+              <button class="nav-item dropbtn">Alertes
+              <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+              <a href="alertes.html">Créer une alerte</a>
+              <a href="#">Historique des alertes</a>
+                
+            </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="favoris.html">Favoris</a>
               </li>
-              <li> <button type="button" class="btn btn-danger btn-block">Se déconnecter</button> </li>
+              <li> <button type="button" class="btn btn-danger btn-block"> Se déconnecter</button> </li>
             </ul>
           </div>
         </div>
-      </nav>
-      <title>YIAQ</title>
-    </head>
-    <body>
+     </nav>
+
+<title>YIIAQ</title>
+</body>
 
 
       <!-- Page Content -->
@@ -62,9 +76,9 @@
 
         </div>
 
-        <div class="row">
+        <div class="row ">
             <!-- Search form -->
-          <div class="active-cyan-10 mb-10 col-md-10">
+          <div class="active-cyan-10 mb-10 col-md-12">
             <input class="form-control" type="text" placeholder="Tapez ici votre recherche ( Campus, bâtiment, étage, salle etc...)" aria-label="Search">
           </div>
         </div>
@@ -72,10 +86,10 @@
 
 
       <!-- Select your Campus -->
-      <div class="row">
-        <div class="col-xs-3 col-md-3 col-lg-5"> <img src="images/iloveimg-resized/hei_yncrea.png"> </div>
-        <div class="col-xs-3 col-md-3 col-lg-5 col-lg-offset-4"> <img src="images/iloveimg-resized/isen_yncrea.png"> </div>
-        <div class="col-xs-3 col-md-3 col-lg-5 col-lg-offset-4"> <img src="images/iloveimg-resized/isa_yncrea.png"> </div>
+      <div class="row ">
+        <div class="col-xs-3 col-md-3 col-lg-4"  > <a href="salle.html"> <img class="image" src="images/home1.png"> </a></div>
+        <div class="col-xs-3 col-md-3 col-lg-4 " ><a href="search.html"> <img class="image" src="images/home2.png"></a> </div>
+        <div class="col-xs-3 col-md-3 col-lg-4 " > <img class="image1" src="images/home3.png">  </div>
 
       </div>
 
