@@ -28,7 +28,7 @@
 
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link" href="home2.html">Accueil</a>
               </li>
               <li class="nav-item ">
@@ -46,7 +46,7 @@
                 
             </div>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item active">
                 <div class="dropdown">
               <button class="nav-item dropbtn"> Mes favoris
               <i class="fa fa-caret-down"></i>
@@ -64,50 +64,88 @@
 
 <title>YIIAQ</title>
 </body>
-
-
-      <!-- Page Content -->
+<div class="tab-content">
+  <div class="tab-pane active" id="inbox">
+      
       <div class="container">
-        <div class="row">
-          <section class="col-md-10 col-md-offset-3">
-                <h1 class="mt-4">Yncréa Intelligence Indoor Air Quality</h1>
-                <p></p>
-                <p></p>
-            <blockquote class="blockquote">
-              <p>
-                Bienvenu sur la plateforme Yncréa Indoor Air Quality. Vous pourrez ici trouver des infomrations sur la qualité de l'air dans les salles selon différents critères. Le taux d'humidité, concentration en carbon etc...
-                La recherche de la salle peut se faire directement sur la barre de recherche, ou bien en cliquant sur les logo de ton campus 
-              </p>
-              <footer class="blockquote-footer">Thierry OCCRE</footer>
-            </blockquote>
-          </section>
+           <div class="content-container clearfix">
+               <div class="col-md-12">
+                <br/>
+                   <h1 class="content-title">Liste des favoris</h1>
+                   
+                   <input type="search" placeholder="Rechercher dans mes favoris" class="form-control" />
+                   <br/>
 
+
+<div class="container">
+  <div class="row form-group">
+        <!-- TABLE HEI -->
+          <table class="table table-hover">
+            <thead>
+              <h3>salles principales</h3>
+
+              <tr>
+                <th>Ecole</th>
+                <th>Etage</th>
+                <th>Salle</th>
+               
+ 
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-href="salle.html">
+                <td>Hei</td>
+                <td>2ème</td>
+                <td>S202</td>
+
+                
+              </tr>
+              <tr data-href="salle.html">
+                <td>Hei</td>
+                <td>1er</td>
+                <td>S10</td>
+              </tr>
+              <tr data-href="salle.html">
+                <td>Hei</td>
+                <td>1er</td>
+                <td>S12</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="row ">
-            <!-- Search form -->
-          <div class="active-cyan-10 mb-10 col-md-12">
-            <input class="form-control " type="search" placeholder="Tapez ici votre recherche ( Campus, bâtiment, étage, salle etc...)" aria-label="Search">
-          </div>
+         <div class="row form-group">
+        <!-- TABLE HEI -->
+          <table class="table table-hover">
+            <thead>
+              <h3>salles secondaires</h3>
+
+              <tr>
+                <th>Ecole</th>
+                <th>Etage</th>
+                <th>Salle</th>
+               
+ 
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-href="salle.html">
+                <td>Isa</td>
+                <td>2ème</td>
+                <td>S202</td>
+
+                
+              </tr>
+              <tr data-href="salle.html">
+                <td>Isa</td>
+                <td>1er</td>
+                <td>S10</td>
+              </tr>
+              <tr data-href="salle.html">
+                <td>Isen</td>
+                <td>1er</td>
+                <td>S12</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <br/>
-
-
-
-      <!-- Select your Campus -->
-      <div class="row ">
-        <div class="col-xs-3 col-md-3 col-lg-4 hover02 column">
-            <a href="salle.html"> <img class="image" src="images/home1.png"> </a>
-         
-        </div>
-        <div class="col-xs-3 col-md-3 col-lg-4 hover02 column" ><a href="search.html"> <img class="image" src="images/home4.png"></a> </div>
-        <div class="col-xs-3 col-md-3 col-lg-4 hover02 column" > <a><img class="image1" src="images/home3.png"> </a> </div>
-
-      </div>
-
-      </div>
-
-    </body>
-
-    
-</html>
