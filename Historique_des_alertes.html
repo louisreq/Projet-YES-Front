@@ -1,8 +1,17 @@
-<!D<!DOCTYPE html>
-<html>
-    <head>
-      <meta charset="utf-8" />
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
@@ -10,9 +19,19 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css_for_all.css">
-      
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+
+
+
+
+
+
+
+  </head>
+  
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="logo3.png" alt="">
@@ -21,12 +40,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-
-
-
-
-          <div class="collapse navbar-collapse" id="navbarResponsive">
+           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item ">
                 <a class="nav-link" href="home2.html">Accueil</a>
@@ -62,70 +76,65 @@
      </nav>
 
 <title>YIIAQ</title>
-</body>
-
-<div class="tab-content">
-  <div class="tab-pane active" id="inbox">
+  <!-- Button trigger modal -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="inbox">
       
       <div class="container">
            <div class="content-container clearfix">
                <div class="col-md-12">
                 <br/>
                    <h1 class="content-title">Messages</h1>
-                   
-                   <input type="search" placeholder="Rechercher dans mes messages" class="form-control" />
-                   
-                   <ul class="mail-list">
-                       <li>
-                           <a href="">
-                               <!-- <span class="mail-sender">HEI</span> -->
-                               <span class="mail-subject">Problème de ventilation en S102</span>
-                               <span class="mail-message-preview">L'air de la salle S102 ne se ventile pas </span>
-                           </a>
-                       </li>
-                       <li>
-                           <a href="">
-                              <!--  <span class="mail-sender">HEI</span> -->
-                               <span class="mail-subject">Problème de température T154 </span>
-                               <span class="mail-message-preview">La température ambiante de la salle T154 est beaucoup trop chaude,Serait-il possible de baisser la température s'il... </span>
-                           </a>
-                       </li>
-                       <li>
-                           <a href="">
-                             <!--   <span class="mail-sender">HEI</span> -->
-                               <span class="mail-subject">Capteur ne marche pas</span>
-                               <span class="mail-message-preview">Bonjour, le capteur ne marche pas en T211</span>
-                           </a>
-                       </li>
+                <ul class="mail-list">
+                  <li data-toggle="modal" data-target="#exampleModalLong">
+                    <a >
+                        <!--  <span class="mail-sender">HEI</span> -->
+                         <span class="mail-subject">Problème de ventilation en S102</span>
+                         <span class="mail-message-preview">L'air de la salle S102 ne se ventile pas</span>
+                     </a>
+                  </li>
+
+
+                  <li data-toggle="modal" data-target="#exampleModalLong">
+                     <a >
+                        <!--  <span class="mail-sender">HEI</span> -->
+                         <span class="mail-subject">Problème de température T154 </span>
+                         <span class="mail-message-preview">La température ambiante de la salle T154 est beaucoup trop chaude,Serait-il possible de baisser la température s'il... </span>
+                     </a>
+                  </li>
+                   <li>
+                       <a >
+                         <!--   <span class="mail-sender">HEI</span> -->
+                           <span class="mail-subject">Capteur ne marche pas</span>
+                           <span class="mail-message-preview">Bonjour, le capteur ne marche pas en T211</span>
+                       </a>
+                   </li>
                        
                    </ul>
                </div>
            </div>
        </div>
-      
-  </div>
-  <div class="tab-pane" id="compose">
-      
-      <div class="container">
-    <div class="content-container clearfix">
-        <h1 class="content-title">Compose</h1>
-        <div class="col-md-12">
-            <div class="form-group">
-                <input id="tokenfield" type="text" class="form-control" placeholder="To" />
+     </div>
+   </div>
+
+                    <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Problème de ventilation en S102</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Cc" />
+            <div class="modal-body">
+             L'air de la salle S102 ne se ventile pas
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Bcc" />
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" />
-            </div>
-            <textarea class="form-control" placeholder="message"></textarea>
-            <div class="btn-send">
-            <button class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send"></span> Send</button>
-            </div>
+            
+          </div>
         </div>
-    </div>
-</div>
+      </div>  
+  
+    
+  </body>
+</html>

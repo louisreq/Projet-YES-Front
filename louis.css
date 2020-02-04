@@ -17,7 +17,7 @@ body {
 }
 
 .dropdown {
-  /*float: left;*/
+  float: left;
   overflow: hidden;
 }
 
@@ -32,8 +32,8 @@ body {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+/*.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;*/
 }
 
 .dropdown-content {
