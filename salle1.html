@@ -6,7 +6,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <!--    <link href="css/animate.min.css" rel="stylesheet">-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.js" rel="stylesheet">
-
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!--    <link rel="stylesheet" type="text/css" href="css_for_all.css">-->
@@ -79,8 +81,7 @@
             <p></p>
             <blockquote class="blockquote">
                 <p>
-                    Bienvenu sur la plateforme Yncréa Indoor Air Quality. Vous pourrez ici trouver des infomrations sur la qualité de l'air dans les salles selon différents critères. Le taux d'humidité, concentration en carbon etc...
-                    La recherche de la salle peut se faire directement sur la barre de recherche, ou bien en cliquant sur les logo de ton campus
+                    Bienvenu sur la plateforme Yncréa Indoor Air Quality. Vous pourrez ici trouver des infomrations sur la qualité de l'air dans les salles selon différents critères: Le taux d'humidité, la température et le décibel.
                 </p>
                 <footer class="blockquote-footer">Thierry OCCRE</footer>
             </blockquote>
@@ -103,7 +104,7 @@
         <div class="col-xs-3 col-sm-4 col-md-4">
             <h3 class="display-3" th:text="${salle.salle_name}">S213</h3>
         </div>
-        <div class="col-xs-3 col-sm-4 col-md-4">
+        <div class="col-xs-3 col-sm-4 col-md-6">
             <h4 class="display-6" th:text="'Salle Bâtiment ' + ${salle.batiment_name} + ' - au ' + ${salle.etage_name}"> Salle Bâtiment Ségard - au 2ème étage</h4>
         </div>
         <script type="text/javascript">
@@ -158,7 +159,7 @@
     <section class="row form-group">
 
         <!-- Element CO2 -->
-        <div class="col-xs-4 col-sm-3 col-md-3">
+       <!--  <div class="col-xs-4 col-sm-3 col-md-3">
 
             <section class="row">
 
@@ -176,14 +177,14 @@
                 </div>
 
             </section>
-        </div>
+        </div> -->
 
         <!-- Element Temperature  -->
-        <div class="col-xs-4 col-sm-3 col-md-3">
+        <div class="col-xs-4 col-sm-3 col-md-4">
             <section class="row">
 
-                <div class="col-xs-6 col-sm-6 col-md-6 logo_img">
-                    <img src="images/hot_v3.png" alt="Temperature" align="right">
+                <div class="col-xs-6 col-sm-6 col-md-6 hover01 column" data-toggle="modal" data-target="#exampleModalLong"><a>
+                    <img src="images/hot_v3.png"  alt="Temperature" align="right"></a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 logo_text">
                     <section class="row">
@@ -201,12 +202,12 @@
 
         <!-- Element Humidity  -->
 
-        <div class="col-xs-4 col-sm-3 col-md-3">
+        <div class="col-xs-4 col-sm-3 col-md-4">
             <section class="row">
 
-                <div class="col-xs-6 col-sm-6 col-md-6 logo_img">
+                <div class="col-xs-6 col-sm-6 col-md-6 logo_img hover01" data-toggle="modal" data-target="#exampleModalLong"><a>
                     <img src="images/humidity_v3.png" alt="Humidity" align="right">
-                </div>
+                </a></div>
                 <div class="col-xs-6 col-sm-6 col-md-6 logo_text">
                     <section class="row">
                         <b>Hum.</b>
@@ -222,7 +223,7 @@
 
         <!-- Element Luminosity  -->
 
-        <div class="col-xs-4 col-sm-3 col-md-3">
+        <!-- <div class="col-xs-4 col-sm-3 col-md-3">
             <section class="row">
 
                 <div class="col-xs-6 col-sm-6 col-md-6 logo_img">
@@ -239,15 +240,15 @@
                 </div>
 
             </section>
-        </div>
+        </div> -->
 
 
         <!-- Element Son  -->
-        <div class="col-xs-4 col-sm-3 col-md-3 logo">
+        <div class="col-xs-4 col-sm-3 col-md-4 logo">
             <section class="row">
 
-                <div class="col-xs-6 col-sm-6 col-md-6 logo_img">
-                    <img src="images/son_v3.png" alt="Son" align="right">
+                <div class="col-xs-6 col-sm-6 col-md-6  hover01 " data-toggle="modal" data-target="#exampleModalLong"><a>
+                    <img src="images/son_v3.png" alt="Son" align="right"></a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6">
 
@@ -265,7 +266,7 @@
         </div>
 
         <!-- Element PM2.5  -->
-        <div class="col-xs-4 col-sm-3 col-md-3">
+       <!--  <div class="col-xs-4 col-sm-3 col-md-3">
             <section class="row">
 
                 <div class="col-xs-6 col-sm-6 col-md-6 logo_img">
@@ -282,10 +283,28 @@
                 </div>
 
             </section>
-        </div>
+        </div> -->
 
     </section>
 </div>
+<!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Temperature en fonction du temps:</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                température en fonction du temps:
+            <img src="graphique1.jpg">
+            </div>
+            
+          </div>
+        </div>
+      </div> 
 
 </body>
 <style>
@@ -558,13 +577,13 @@
     }
     /* Zoom In #2 */
     .hover02 a img {
-        width: 300px;
+        width: 100%;
         height: auto;
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
     }
     .hover02 a:hover img {
-        width: 350px;
+        width: 100px;
     }
 
     .bouton{
