@@ -76,7 +76,7 @@
 
 <body>
  <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Icon -->
     <div class="fadeIn first">
       <img src="airquality.png" id="icon" alt="User Icon" />
@@ -86,55 +86,55 @@
 </div>
 
 <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Tabs Titles -->
       <h4>Air et organes</h4>
   </div>
 </div>
 
 <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Tabs Titles -->
 
       <p>Selon vous, qu'impacte un air pollué ? </p>
 
 
       <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
-          <label class="form-check-label" for="ck1">Le cerveau</label>
+          <input class="form-check-input" type="checkbox" name="impacte_air_pollué" value="cerveau" id="cerveau">
+          <label class="form-check-label" for="cerveau">Le cerveau</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
-          <label class="form-check-label" for="ck1">Le coeur</label>
+          <input class="form-check-input" type="checkbox" name="impacte_air_pollué" value="coeur" id="coeur">
+          <label class="form-check-label" for="coeur">Le coeur</label>
         </div>
 
       <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
-          <label class="form-check-label" for="ck1">Le sang</label>
+          <input class="form-check-input" type="checkbox" name="impacte_air_pollué" value="sang" id="sang">
+          <label class="form-check-label" for="sang">Le sang</label>
       </div>
       <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
-          <label class="form-check-label" for="ck1">Les poumons</label>
+          <input class="form-check-input" type="checkbox" name="impacte_air_pollué" value="poumons" id="poumons">
+          <label class="form-check-label" for="poumons">Les poumons</label>
       </div>
       <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
-          <label class="form-check-label" for="ck1">Le système reproducteur</label>
+          <input class="form-check-input" type="checkbox" name="impacte_air_pollué" value="système_reproducteur" id="système_reproducteur">
+          <label class="form-check-label" for="système_reproducteur">Le système reproducteur</label>
       </div>
       <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
-          <label class="form-check-label" for="ck1">Les yeux</label>
+          <input class="form-check-input" type="checkbox" name="impacte_air_pollué" value="yeux" id="yeux">
+          <label class="form-check-label" for="yeux">Les yeux</label>
       </div>
       <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
-          <label class="form-check-label" for="ck1">Le nez</label>
+          <input class="form-check-input" type="checkbox" name="impacte_air_pollué" value="nez" id="nez">
+          <label class="form-check-label" for="nez">Le nez</label>
       </div>
       <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
-          <label class="form-check-label" for="ck1">La gorge</label>
+          <input class="form-check-input" type="checkbox" name="impacte_air_pollué" value="gorge" id="gorge">
+          <label class="form-check-label" for="gorge">La gorge</label>
       </div>
       <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
-          <label class="form-check-label" for="ck1">Le nourrison</label>
+          <input class="form-check-input" type="checkbox" name="impacte_air_pollué" value="nourrison" id="nourrison">
+          <label class="form-check-label" for="nourrison">Le nourrison</label>
       </div>
     </div>
   </div>
@@ -146,5 +146,10 @@
       <input type="submit" class="fadeIn fourth" value="Suivant"> 
     </center>
     </form>
+  <div class="progress" style="width: 30%";>
+      <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"  style="width: 60%;">
+          60%
+      </div>
+ </div>
 </body>
 </html>

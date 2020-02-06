@@ -76,7 +76,7 @@
 
 <body>
   <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Icon -->
     <div class="fadeIn first">
       <img src="airquality.png" id="icon" alt="User Icon" />
@@ -86,39 +86,39 @@
 </div>
 
 <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Tabs Titles -->
       <h4>Votre niveau de qualification</h4>
   </div>
 </div>
 <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Tabs Titles -->
       
       <h5>Quel est le diplôme le plus élevé que vous avez obtenu ? </h5>
     <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
-          <label class="form-check-label" for="radio1">Pas de diplôme</label>
+          <input class="form-check-input" type="radio" name="diplome" id="Pas_de_diplôme" value="Pas_de_diplôme">
+          <label class="form-check-label" for="Pas_de_diplôme">Pas de diplôme</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">BEP OU CAP</label>
+          <input class="form-check-input" type="radio" name="diplome" id="BEP" value="BEP">
+          <label class="form-check-label" for="BEP">BEP OU CAP</label>
         </div>
          <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">Bac</label>
+          <input class="form-check-input" type="radio" name="diplome" id="Bac" value="Bac">
+          <label class="form-check-label" for="Bac">Bac</label>
         </div>
          <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">Bac + 2</label>
+          <input class="form-check-input" type="radio" name="diplome" id="Bac+2" value="Bac+2">
+          <label class="form-check-label" for="Bac+2">Bac + 2</label>
         </div>
          <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">Bac + 3</label>
+          <input class="form-check-input" type="radio" name="diplome" id="Bac+3" value="Bac+3">
+          <label class="form-check-label" for="Bac+3">Bac + 3</label>
         </div>
          <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">Bac +5 et plus</label>
+          <input class="form-check-input" type="radio" name="diplome" id="Bac+5" value="Bac+5">
+          <label class="form-check-label" for="Bac+5">Bac +5 et plus</label>
         </div>
          <div class="form-check">
           <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
@@ -133,12 +133,12 @@
     <h5>Etes-vous parent ?</h5>
 
     <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
-          <label class="form-check-label" for="radio1">oui</label>
+          <input class="form-check-input" type="radio" name="parent" id="oui" value="oui">
+          <label class="form-check-label" for="oui">oui</label>
     </div>
     <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">non</label>
+          <input class="form-check-input" type="radio" name="parent" id="non" value="non">
+          <label class="form-check-label" for="non">non</label>
     </div>
   </div>
 </div>
@@ -152,7 +152,7 @@
 <div class="wrapper fadeInDown">
   <div id="formContent">
     <h5>Citez trois mots ou expressions que vous évoque le mot « air » :</h5>
-     <input type="reponse" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre réponse">
+     <input type="reponse" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Votre réponse">
   </div>
 </div>
 
@@ -163,5 +163,11 @@
       <input type="submit" class="fadeIn fourth" value="Suivant"> 
     </center>
     </form>
+
+  <div class="progress" style="width: 30%";>
+      <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"  style="width: 27%;">
+          27%
+      </div>
+ </div>
 </body>
 </html>

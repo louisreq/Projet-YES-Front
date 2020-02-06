@@ -76,7 +76,7 @@
 
 <body>
  <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Icon -->
     <div class="fadeIn first">
       <img src="airquality.png" id="icon" alt="User Icon" />
@@ -86,28 +86,28 @@
 </div>
 
 <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Tabs Titles -->
       <h4>Air et information</h4>
   </div>
 </div>
 
 <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Tabs Titles -->
 
       <p>D'après-vous, la qualité de l’air a-t-elle un impact sur la santé ? </p>
     <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
-          <label class="form-check-label" for="radio1">Non, pas d’impact</label>
+          <input class="form-check-input" type="radio" name="qualité_de_l’air_un_impact_sur_la_santé" id="Non" value="Non">
+          <label class="form-check-label" for="Non">Non, pas d’impact</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">Oui, un faible impact</label>
+          <input class="form-check-input" type="radio" name="qualité_de_l’air_un_impact_sur_la_santé" id="oui" value="oui">
+          <label class="form-check-label" for="oui+">Oui, un faible impact</label>
         </div>
          <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">Oui, un fort impact</label>
+          <input class="form-check-input" type="radio" name="qualité_de_l’air_un_impact_sur_la_santé" id="oui+" value="oui+">
+          <label class="form-check-label" for="oui+">Oui, un fort impact</label>
         </div>
         
          
@@ -123,7 +123,11 @@
     </center>
     </form>
 
-  
+  <div class="progress" style="width: 30%";>
+      <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"  style="width: 53%;">
+          53%
+      </div>
+ </div>
     
 </body>
 </html>

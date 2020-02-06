@@ -18,7 +18,7 @@
 		padding: 10px;
 	}
 
-	#formContent {
+	.formContent {
 		-webkit-border-radius: 10px 10px 10px 10px;
 		border-radius: 10px 10px 10px 10px;
 		background: #fff;

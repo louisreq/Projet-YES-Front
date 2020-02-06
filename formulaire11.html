@@ -76,7 +76,7 @@
 
 <body>
  <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Icon -->
     <div class="fadeIn first">
       <img src="airquality.png" id="icon" alt="User Icon" />
@@ -86,51 +86,51 @@
 </div>
 
 <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Tabs Titles -->
       <h4>Vos déplacements</h4>
   </div>
 </div>
 
 <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Tabs Titles -->
 
       <p>Au quotidien, lors de vos déplacements à pied, en roller, à vélo ou en trottinette, évitez-vous les routes où le trafic routier est important ? </p>
 
       <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
-          <label class="form-check-label" for="radio1">Oui, je prends souvent des chemins parallèles, moins exposés à la pollution</label>
+          <input class="form-check-input" type="radio" name="evitez_trafic_vélo" id="oui+" value="oui+">
+          <label class="form-check-label" for="oui">Oui, je prends souvent des chemins parallèles, moins exposés à la pollution</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">Oui, parfois</label>
+          <input class="form-check-input" type="radio" name="evitez_trafic_vélo" id="oui" value="oui">
+          <label class="form-check-label" for="oui">Oui, parfois</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">Non, jamais</label>
+          <input class="form-check-input" type="radio" name="evitez_trafic_vélo" id="non" value="non">
+          <label class="form-check-label" for="non">Non, jamais</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">Non concerné.e, j’effectue surtout des déplacement motorisés (voiture, transports en commun…)</label>
+          <input class="form-check-input" type="radio" name="evitez_trafic_vélo" id="nonconcernée" value="nonconcernée">
+          <label class="form-check-label" for="nonconcernée">Non concerné.e, j’effectue surtout des déplacement motorisés (voiture, transports en commun…)</label>
         </div>
     </div>
   </div>
 
   <div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div class="formContent">
     <!-- Tabs Titles -->
 
       <p>Pratiquez-vous au moins l’un de ces sports dehors : marche sportive, course à pied, roller, cyclisme ? </p>
 
       <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
-          <label class="form-check-label" for="radio1">Oui</label>
+          <input class="form-check-input" type="radio" name="Pratiquez_courseàpied" id="oui1" value="oui1">
+          <label class="form-check-label" for="oui1">Oui</label>
         </div>
         
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
-          <label class="form-check-label" for="radio2">Non</label>
+          <input class="form-check-input" type="radio" name="Pratiquez_courseàpied" id="non1" value="non1">
+          <label class="form-check-label" for="non1">Non</label>
         </div>
         
     </div>
@@ -143,5 +143,10 @@
       <input type="submit" class="fadeIn fourth" value="Suivant"> 
     </center>
     </form>
+  <div class="progress" style="width: 30%";>
+      <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"  style="width: 80%;">
+          80%
+      </div>
+ </div>
 </body>
 </html>

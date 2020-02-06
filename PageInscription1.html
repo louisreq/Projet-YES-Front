@@ -1,14 +1,14 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html>
 <head>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <title>Bienvenue sur YIIAQ</title>
+	<title>Bienvenue sur YIIAQ</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="../../Css/connexion_page.css" type="text/css" >
 	<link href="test.css" rel="stylesheet" type="text/plain">
 
@@ -29,32 +29,22 @@
 		</div>
 
 		<!-- Login Form -->
-		<form method="post">
-			<div style="display: inline-block";>
-				<h5>Sexe:<h5>
+		<form method="post" >
+			<select id="sexe" class="fadeIn third form-control" name="sexe" required >
+				<option value="1" selected>Homme</option>
+				<option value="2">Femme</option>
+			</select>
+			<input type="text" id="nom" class="fadeIn first" name="nom" placeholder="Nom" required>
+			<input type="text" id="prenom" class="fadeIn second" name="prenom" placeholder="Prénom" required>
 			
-				<div class="form-check" >
-		          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
-		          <label class="form-check-label" for="radio1">Homme</label>
-		        </div>
-		   	
-		        <div class="form-check">
-		          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
-		          <label class="form-check-label" for="radio1">Femme</label>
-		        </div>
-		    </div>
-				<input type="text" id="nom" class="fadeIn first" name="nom" placeholder="Nom">
-				<input type="text" id="prenom" class="fadeIn second" name="prenom" placeholder="Prénom">
-				<input type="text" id="adresse" class="fadeIn third" name="adresse" placeholder="Adresse mail">
-				<input type="password" id="password" class="fadeIn fourth" name="password" placeholder="Mot de passe">
-				<input type="password" id="password2" class="fadeIn fourth" name="password2" placeholder="Confirmation du mot de passe">
-				
-				<input type="submit" class="fadeIn fourth" value="S'inscrire"> <!-- rediriger vers la page de connexion -->
+			<input type="text" id="adresse_mail" class="fadeIn fourth" name="adresse_mail" placeholder="Adresse mail" required>
+			<input type="password" id="password" class="fadeIn fifth" name="password" placeholder="Mot de passe" required>
+			<input type="password" id="password2" class="fadeIn sixth" name="password2" placeholder="Confirmation du mot de passe" required>
+
+			<input type="submit" class="fadeIn seventh" value="S'inscrire"> <!-- rediriger vers la page de connexion -->
 		</form>
 
-		
-			
-		
+
 
 	</div>
 </div>
@@ -142,8 +132,7 @@
 
 	/* FORM TYPOGRAPHY*/
 
-	input[type=button], input[type=submit], input[type=reset]  input[type=radio]{
-				
+	input[type=button], input[type=submit], input[type=reset]{
 		background-color: #56baed;
 		border: none;
 		color: white;
@@ -165,11 +154,11 @@
 		transition: all 0.3s ease-in-out;
 	}
 
-	input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+	input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
 		background-color: #39ace7;
 	}
 
-	input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+	input[type=button]:active, input[type=submit]:active, input[type=reset]:active{
 		-moz-transform: scale(0.95);
 		-webkit-transform: scale(0.95);
 		-o-transform: scale(0.95);
@@ -177,7 +166,7 @@
 		transform: scale(0.95);
 	}
 
-	input[type=text], input[type=password] {
+	input[type=text], input[type=password], select, option {
 		background-color: #f6f6f6;
 		border: none;
 		color: #0d0d0d;
@@ -198,12 +187,12 @@
 		border-radius: 5px 5px 5px 5px;
 	}
 
-	input[type=text]:focus, input[type=password]:focus {
+	input[type=text]:focus, input[type=password]:focus, select:focus, option:focus {
 		background-color: #fff;
 		border-bottom: 2px solid #5fbae9;
 	}
 
-	input[type=text]::placeholder, input[type=password]::placeholder {
+	input[type=text]::placeholder, input[type=password]::placeholder, select::placeholder, option::placeholder {
 		color: #cccccc;
 	}
 
@@ -322,13 +311,13 @@
 	#icon {
 		width:40%;
 	}
+	#sexe
+	{
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
 </style>
 </body>
 </html>
-
-
-
-
-
- 
-					
