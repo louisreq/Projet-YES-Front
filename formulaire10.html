@@ -10,6 +10,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css_for_all.css">
+      <link rel="stylesheet" type="text/css" href="cssformulaire.css">
       
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
@@ -34,10 +35,9 @@
               <li class="nav-item ">
                 <a class="nav-link" href="apropos.html">A propos</a>
               </li>
-              
               <li class="nav-item ">
                 <div class="dropdown">
-              <button class="nav-item dropbtn">Mes alertes
+              <button class="dropbtn">Mes alertes
               <i class="fa fa-caret-down"></i>
               </button>
             <div class="dropdown-content">
@@ -46,7 +46,7 @@
                 
             </div>
               </li>
-              <li class="nav-item active">
+               <li class="nav-item ">
                 <div class="dropdown">
               <button class="nav-item dropbtn"> Mes favoris
               <i class="fa fa-caret-down"></i>
@@ -56,99 +56,73 @@
               <a href="Liste_des_favoris.html">Liste des favoris</a>
             </div>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item active">
                 <a class="nav-link" href="formulaire.html">Formulaire</a>
               </li>
               <li> <a type="button" class="btn btn-danger btn-block bouton" href="PageConnexion.html"> Se déconnecter </a> </li>
+              
+            </div>
+          </li>
+        </div>
+      </li>
+
+             
             </ul>
           </div>
         </div>
      </nav>
 
 <title>YIIAQ</title>
+
+<body>
+ <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="airquality.png" id="icon" alt="User Icon" />
+    </div>
+    <h1>Enquête sur la qualité de l'air à HEI</h1>  
+  </div>
+</div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      <h4>Fréquence d'aération</h4>
+  </div>
+</div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+      <p>Si oui, à quelle fréquence ?  </p>
+
+      <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Une à 2 fois par jour</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Deux à 4 fois par semaine</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Une fois par semaine</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Une ou 2 fois par mois</label>
+        </div>
+    </div>
+  </div>
+
+  <form method="post" >
+
+    <center class="b">
+      <input type="submit" class="fadeIn fourth " value="Retour">
+      <input type="submit" class="fadeIn fourth" value="Suivant"> 
+    </center>
+    </form>
 </body>
-<div class="tab-content">
-  <div class="tab-pane active" id="inbox">
-      
-      <div class="container">
-           <div class="content-container clearfix">
-               <div class="col-md-12">
-                <br/>
-                   <h1 class="content-title">Liste des favoris</h1>
-                   
-                   <input type="search" placeholder="Rechercher dans mes favoris" class="form-control" />
-                   <br/>
-
-
-<div class="container">
-  <div class="row form-group">
-        <!-- TABLE HEI -->
-          <table class="table table-hover">
-            <thead>
-              <h3>salles principales</h3>
-
-              <tr>
-                <th>Ecole</th>
-                <th>Etage</th>
-                <th>Salle</th>
-               
- 
-              </tr>
-            </thead>
-            <tbody>
-              <tr data-href="salle.html">
-                <td>Hei</td>
-                <td>2ème</td>
-                <td>S202</td>
-
-                
-              </tr>
-              <tr data-href="salle.html">
-                <td>Hei</td>
-                <td>1er</td>
-                <td>S10</td>
-              </tr>
-              <tr data-href="salle.html">
-                <td>Hei</td>
-                <td>1er</td>
-                <td>S12</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-         <div class="row form-group">
-        <!-- TABLE HEI -->
-          <table class="table table-hover">
-            <thead>
-              <h3>salles secondaires</h3>
-
-              <tr>
-                <th>Ecole</th>
-                <th>Etage</th>
-                <th>Salle</th>
-               
- 
-              </tr>
-            </thead>
-            <tbody>
-              <tr data-href="salle.html">
-                <td>Isa</td>
-                <td>2ème</td>
-                <td>S202</td>
-
-                
-              </tr>
-              <tr data-href="salle.html">
-                <td>Isa</td>
-                <td>1er</td>
-                <td>S10</td>
-              </tr>
-              <tr data-href="salle.html">
-                <td>Isen</td>
-                <td>1er</td>
-                <td>S12</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+</html>

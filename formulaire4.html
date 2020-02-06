@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css_for_all.css">
+      <link rel="stylesheet" type="text/css" href="cssformulaire.css">
+      
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="logo3.png" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="home2.html">Accueil</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="apropos.html">A propos</a>
+              </li>
+              <li class="nav-item ">
+                <div class="dropdown">
+              <button class="dropbtn">Mes alertes
+              <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+              <a href="alertes.html">Créer une alerte</a>
+              <a href="Historique_des_alertes.html">Historique des alertes</a>
+                
+            </div>
+              </li>
+               <li class="nav-item ">
+                <div class="dropdown">
+              <button class="nav-item dropbtn"> Mes favoris
+              <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+              <a href="favoris.html">Ajouter un favori</a>
+              <a href="Liste_des_favoris.html">Liste des favoris</a>
+            </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="formulaire.html">Formulaire</a>
+              </li>
+              <li> <a type="button" class="btn btn-danger btn-block bouton" href="PageConnexion.html"> Se déconnecter </a> </li>
+              
+            </div>
+          </li>
+        </div>
+      </li>
+
+             
+            </ul>
+          </div>
+        </div>
+     </nav>
+
+<title>YIIAQ</title>
+
+<body>
+ <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="airquality.png" id="icon" alt="User Icon" />
+    </div>
+    <h1>Enquête sur la qualité de l'air à HEI</h1>  
+  </div>
+</div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      <h4>La qualité de l'air intérieur dans votre espace de travail</h4>
+      <p>Nous allons à présent vous interroger sur votre perception de la qualité de l’air intérieur dans votre espace de travail ou d’études.</p>
+  </div>
+</div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+      <p>Généralement, dans les locaux d'HEI (rues de Toul, Norbert Ségard), la qualité de l’air vous parait : </p>
+    <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Plutôt bonne</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Bonne</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Plutôt mauvaise</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Mauvaise</label>
+        </div>
+         
+
+      </div>
+    </div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <p>Dans quelle salle vous trouvez-vous actuellement ? </p>
+
+    <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Salle 1</label>
+    </div>
+    <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Salle 2</label>
+    </div>
+    <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Etc.</label>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+      <p>A quelle distance se situe la fenêtre la plus proche de vous ?  </p>
+    <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">A moins d’1 mètre</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Entre 1 et 3 mètres</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Entre 3 et 5 mètres</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">A plus de 5 mètres</label>
+        </div>
+         
+
+      </div>
+    </div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>À quelle distance vous situez-vous de la bouche de ventilation (voir images ci-dessous) ? </p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">A moins de 2 mètres</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Entre 2 et 5 mètres</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">A plus de 5 mètres</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Je ne sais pas, je ne la vois pas</label>
+        </div>
+         
+
+      </div>
+    </div>
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Exemple de bouche de ventilation </p>
+        <img src="bouche1.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Exemple de bouche de ventilation </p>
+        <img src="bouche2.jpg" alt="">
+    </div>
+  </div>
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Exemple de bouche de ventilation </p>
+        <img src="bouche3.jpg" class="bouche3" alt="">
+    </div>
+  </div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Aujourd’hui, dans votre espace de travail, vous diriez qu’il fait : </p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Un peu chaud</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Chaud</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Très chaud</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Un peu froid</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Froid</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Très froid</label>
+        </div>
+         
+
+      </div>
+    </div>
+
+  <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Cette température vous parait : </p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Assez confortable</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Confortable</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Assez inconfortable</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Inconfortable</label>
+        </div>
+       
+      </div>
+    </div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <p>Quelle est la température de la salle d’après le capteur dans la salle ?</p>
+     <input type="reponse" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre réponse">
+  </div>
+</div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Aujourd’hui, dans votre espace de travail, vous diriez que l’air est :</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Sec</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Très sec</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Humide</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Très humide</label>
+        </div>
+       
+      </div>
+    </div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Cet air vous parait :</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Assez agréable</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Agréable</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Assez désagréable</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Désagréable</label>
+        </div>
+       
+      </div>
+    </div>
+
+  <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Aujourd’hui, depuis votre arrivée dans cette salle, quelle(s) odeur(s) avez-vous sentie(s) :</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Odeurs de nourriture</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Odeurs corporelles</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Odeur de moisi</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Odeur d’humidité</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Odeur de poussière</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Odeur de parfum, de déodorant</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Odeur de produit de nettoyage</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Odeur de tabac</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Odeurs de nourriture</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Je n’ai senti aucune de ces odeurs</label>
+        </div>
+       
+          <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="radio" id="radio2" value="o2">
+           <input type="reponse" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Autre reponse">
+        </div>
+    </div>
+  </div>
+
+  <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Aujourd’hui, dans votre espace de travail, avez-vous remarqué de la poussière ?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Oui</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Non</label>
+        </div>
+    </div>
+  </div>
+
+ <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Aujourd’hui, ressentez-vous un ou plusieurs de ces symptômes ?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Yeux rouges, irrités</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Yeux secs</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Nez bouché</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Rougeurs ou irritations de la peau</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Grattement du cuir chevelu</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Œil ou yeux qui coulent</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Saignements du nez</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Gonflement d’une partie du corps</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Sécheresse ou irritation des voies respiratoires</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Maux de tête</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Difficultés de concentration</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Sensation de fatigue</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Je ne ressens aucun de ces symptômes</label>
+        </div>
+       
+          <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="radio" id="radio2" value="o2">
+           <input type="reponse" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Autre reponse">
+        </div>
+    </div>
+  </div>
+
+  <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Aujourd’hui, la qualité de l’air dans cette salle vous parait :</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Aussi bonne que d’habitude</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Meilleure que d’habitude</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Aussi mauvaise que d’habitude</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Moins bonne que d’habitude</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Pas de référence, premier cours ou séance de travail dans cette salle</label>
+        </div>
+       
+      </div>
+    </div>
+
+ <form method="post" >
+
+    <center class="b">
+      <input type="submit" class="fadeIn fourth " value="Retour">
+      <input type="submit" class="fadeIn fourth" value="Suivant"> 
+    </center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css_for_all.css">
+      <link rel="stylesheet" type="text/css" href="cssformulaire.css">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="logo3.png" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="home2.html">Accueil</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="apropos.html">A propos</a>
+              </li>
+              <li class="nav-item ">
+                <div class="dropdown">
+              <button class="dropbtn">Mes alertes
+              <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+              <a href="alertes.html">Créer une alerte</a>
+              <a href="Historique_des_alertes.html">Historique des alertes</a>
+                
+            </div>
+              </li>
+               <li class="nav-item ">
+                <div class="dropdown">
+              <button class="nav-item dropbtn"> Mes favoris
+              <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+              <a href="favoris.html">Ajouter un favori</a>
+              <a href="Liste_des_favoris.html">Liste des favoris</a>
+            </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="formulaire.html">Formulaire</a>
+              </li>
+              <li> <a type="button" class="btn btn-danger btn-block bouton" href="PageConnexion.html"> Se déconnecter </a> </li>
+              
+
+             
+            </ul>
+          </div>
+        </div>
+     </nav>
+
+<title>YIIAQ</title>
+
+<body>
+
+<div class="wrapper fadeInDown">
+	<div id="formContent">
+		<!-- Icon -->
+		<div class="fadeIn first">
+			<img src="airquality.png" id="icon" alt="User Icon" />
+		</div>
+		<h1>Enquête sur la qualité de l'air à HEI</h1>	
+	</div>
+</div>
+<div class="wrapper fadeInDown">
+	<div id="formContent">
+		<!-- Tabs Titles -->
+			<h4>Pour vous connaître	</h4>
+	</div>
+</div>
+
+<div class="wrapper fadeInDown">
+	<div id="formContent">
+			<h5>Vous êtes :</h5>
+		<div class="form-check">
+	        <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+	        <label class="form-check-label" for="radio1">Un homme</label>
+      	</div>
+      	<div class="form-check">
+	        <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+	        <label class="form-check-label" for="radio2">Une femme</label>
+      	</div>
+		
+
+		
+
+	</div>
+</div>
+<div class="wrapper fadeInDown">
+	<div id="formContent">
+		<!-- Tabs Titles -->
+		<h5>Quel âge avez-vous ?</h5>
+		 <input type="reponse" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="votre reponse">
+	</div>
+</div>
+
+<div class="wrapper fadeInDown">
+	<div id="formContent">
+		<!-- Tabs Titles -->
+
+			<h5> Vous êtes :	</h5>
+		<div class="form-check">
+	        <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+	        <label class="form-check-label" for="radio1">Etudiant.e</label>
+      	</div>
+      	<div class="form-check">
+	        <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+	        <label class="form-check-label" for="radio2">Personnel(administration, communication, formation, qualité...)</label>
+      	</div>
+      	<div class="form-check">
+	        	<input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+	    	
+	        <label class="form-check-label" for="radio2">Enseignant.e</label>
+      	</div>
+      	<div class="form-check">
+	        <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+	         <input type="reponse" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Autre reponse">
+      	</div>
+      	
+      </div>
+  </div>
+      	<!-- <div class="form-group">
+    		<div class="input-group">
+      			<div class="input-group-prepend">
+        			<div class="input-group-text">
+       				 <input type="radio"> autre
+        			</div>
+      			</div>
+      			<input type="text" class="form-control">
+    		</div>
+  		</div> -->
+
+<!-- Login Form -->
+		<form method="post" >
+
+		<center class="b">
+			<input type="submit" class="fadeIn fourth " value="Retour">
+			<input type="submit" class="fadeIn fourth" value="Suivant"> 
+		</center>
+		</form>
+</body>
+
+<!-- <style>
+	/*html {
+		background-color: #56baed;
+	}*/
+
+	body {
+		font-family: "Poppins", sans-serif;
+		height: 100vh;
+		background-color: none;
+	}
+
+
+	/* STRUCTURE */
+
+	.wrapper {
+		display: flex;
+		/*align-items: center;*/
+		/*flex-direction: column;*/
+		justify-content: center;
+		width: 100%;
+		/*min-height: 100%;*/
+		padding: 20px;
+	}
+
+	#formContent {
+		-webkit-border-radius: 10px 10px 10px 10px;
+		border-radius: 10px 10px 10px 10px;
+		background: #fff;
+		padding: 30px;
+		width: 90%;
+		max-width: 450px;
+		position: relative;
+		
+		-webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+		box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+		text-align: center;
+	}
+
+
+
+
+
+	/* FORM TYPOGRAPHY*/
+
+	input[type=button], input[type=submit], input[type=reset]  {
+		background-color: #56baed;
+		border: none;
+		color: white;
+		padding: 15px 80px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 13px;
+		-webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+		box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+		-webkit-border-radius: 5px 5px 5px 5px;
+		border-radius: 5px 5px 5px 5px;
+	
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		margin: 0 auto;
+
+
+	}
+
+	input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+		background-color: #39ace7;
+	}
+
+	input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+		-moz-transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+		-o-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+
+
+
+
+
+
+	/* ANIMATIONS */
+
+	/* Simple CSS3 Fade-in-down Animation */
+	.fadeInDown {
+		-webkit-animation-name: fadeInDown;
+		animation-name: fadeInDown;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+
+	@-webkit-keyframes fadeInDown {
+		0% {
+			opacity: 0;
+			-webkit-transform: translate3d(0, -100%, 0);
+			transform: translate3d(0, -100%, 0);
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+
+	@keyframes fadeInDown {
+		0% {
+			opacity: 0;
+			-webkit-transform: translate3d(0, -100%, 0);
+			transform: translate3d(0, -100%, 0);
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+
+	/* Simple CSS3 Fade-in Animation */
+	@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+	.fadeIn {
+		opacity:0;
+		-webkit-animation:fadeIn ease-in 1;
+		-moz-animation:fadeIn ease-in 1;
+		animation:fadeIn ease-in 1;
+
+		-webkit-animation-fill-mode:forwards;
+		-moz-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+		-webkit-animation-duration:1s;
+		-moz-animation-duration:1s;
+		animation-duration:1s;
+	}
+
+	.fadeIn.first {
+		-webkit-animation-delay: 0.4s;
+		-moz-animation-delay: 0.4s;
+		animation-delay: 0.4s;
+	}
+
+	.fadeIn.second {
+		-webkit-animation-delay: 0.6s;
+		-moz-animation-delay: 0.6s;
+		animation-delay: 0.6s;
+	}
+
+	.fadeIn.third {
+		-webkit-animation-delay: 0.8s;
+		-moz-animation-delay: 0.8s;
+		animation-delay: 0.8s;
+	}
+
+	.fadeIn.fourth {
+		-webkit-animation-delay: 1s;
+		-moz-animation-delay: 1s;
+		animation-delay: 1s;
+		/*display: inline-block;*/
+   /* margin: 4px auto 0;*/
+	}
+
+	/* Simple CSS3 Fade-in Animation */
+	.underlineHover:after {
+		display: block;
+		left: 0;
+		bottom: -10px;
+		width: 0;
+		height: 2px;
+		background-color: #56baed;
+		content: "";
+		transition: width 0.2s;
+	}
+
+	.underlineHover:hover {
+		color: #0d0d0d;
+	}
+
+	.underlineHover:hover:after{
+		width: 100%;
+	}
+
+
+
+	/* OTHERS */
+
+	*:focus {
+		outline: none;
+	}
+
+	#icon {
+		width:40%;
+	}
+	.form-check
+	{
+		text-align: left;
+	}
+	p{
+		text-align: left;
+	 }
+	.form .b{
+		text-align: center;
+
+	}
+
+</style>
+</body> -->
+</html>

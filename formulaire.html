@@ -1,42 +1,98 @@
-<!DOCTYPE html> 
-
+<!DOCTYPE html>
 <html>
-<head>
+    <head>
+     	<meta charset="utf-8" />
+     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+		<link href="css/animate.min.css" rel="stylesheet">
+    	<link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      	<link rel="stylesheet" type="text/css" href="css_for_all.css">
+      	<link rel="stylesheet" type="text/css" href="cssformulaire.css">
+      
 
-    <title>Bienvenue sur YIIAQ</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="../../Css/connexion_page.css" type="text/css" >
-	<link href="test.css" rel="stylesheet" type="text/plain">
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+	          <a class="navbar-brand" href="#">
+	            <img src="logo3.png" alt="">
+	          </a>
 
-</head>
+	          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	          </button>
+
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+		            <ul class="navbar-nav ml-auto">
+		              <li class="nav-item ">
+		                <a class="nav-link" href="home2.html">Accueil</a>
+		              </li>
+		              <li class="nav-item ">
+		                <a class="nav-link" href="apropos.html">A propos</a>
+		              </li>
+		              <li class="nav-item ">
+		                <div class="dropdown">
+		              <button class="dropbtn">Mes alertes
+		              <i class="fa fa-caret-down"></i>
+		              </button>
+		            <div class="dropdown-content">
+		              <a href="alertes.html">Créer une alerte</a>
+		              <a href="Historique_des_alertes.html">Historique des alertes</a>
+		                
+		            </div>
+		              </li>
+		               <li class="nav-item ">
+		                <div class="dropdown">
+		              <button class="nav-item dropbtn"> Mes favoris
+		              <i class="fa fa-caret-down"></i>
+		              </button>
+		            <div class="dropdown-content">
+		              <a href="favoris.html">Ajouter un favori</a>
+		              <a href="Liste_des_favoris.html">Liste des favoris</a>
+		            </div>
+		              </li>
+		              <li class="nav-item active">
+		                <a class="nav-link" href="formulaire.html">Formulaire</a>
+		              </li>
+		              <li> <a type="button" class="btn btn-danger btn-block bouton" href="PageConnexion.html"> Se déconnecter </a> </li>
+		              
+
+		             
+		            </ul>
+		          </div>
+		        </div>
+		     </nav>
+
+<title>YIIAQ</title>
+
 <body>
 
-
-
-<!------ Include the above in your HEAD tag ---------->
-
+<div class="wrapper fadeInDown">
+	<div id="formContent">
+		<!-- Icon -->
+		<div class="fadeIn first">
+			<img src="airquality.png" id="icon" alt="User Icon" />
+		</div>
+		<h1>Enquête sur la qualité de l'air à HEI</h1>	
+	</div>
+</div>
 <div class="wrapper fadeInDown">
 	<div id="formContent">
 		<!-- Tabs Titles -->
 
-		<!-- Icon -->
-		<div class="fadeIn first">
-			<img src="logo3.png" id="icon" alt="User Icon" />
-		</div>
-
+		
+		
+		<p>Bonjour,
+Dans le cadre de la chaire SBnodesSG, l’équipe de recherches en Génie civil et Géo-environnement d’HEI travaille sur la qualité de l’air et l’amélioration du confort dans les espaces de travail. Avec cette enquête, les chercheur.e.s souhaitent connaître votre perception de la qualité de l'air intérieur et extérieur mais également votre niveau d'information afin de promouvoir les bons gestes. 
+Pourriez-vous prendre quelques instants pour répondre à ce questionnaire qui dure moins de 10 minutes ? L’ensemble des réponses sera traité de façon anonyme et fera l’objet d’un rapport écrit disponible pour tous.
+</p>
 		<!-- Login Form -->
 		<form method="post">
-			<input type="text" id="nom" class="fadeIn first" name="nom" placeholder="Nom">
-			<input type="text" id="prenom" class="fadeIn second" name="prenom" placeholder="Prénom">
-			<input type="text" id="adresse" class="fadeIn third" name="adresse" placeholder="Adresse mail">
-			<input type="password" id="password" class="fadeIn fourth" name="password" placeholder="Mot de passe">
-			<input type="password" id="password2" class="fadeIn fourth" name="password2" placeholder="Confirmation du mot de passe">
 			
-			<input type="submit" class="fadeIn fourth" value="S'inscrire"> <!-- rediriger vers la page de connexion -->
+			
+			<input type="submit" class="fadeIn fourth" value="Suivant"> <!-- rediriger vers la page de connexion -->
 		</form>
 
 		
@@ -45,15 +101,15 @@
 </div>
 </body>
 
-<style>
-	html {
+<!-- <style>
+	/*html {
 		background-color: #56baed;
-	}
+	}*/
 
 	body {
 		font-family: "Poppins", sans-serif;
 		height: 100vh;
-		background-color: #0d0d0d;
+		background-color: none;
 	}
 
 	a {
@@ -80,7 +136,7 @@
 	.wrapper {
 		display: flex;
 		align-items: center;
-		flex-direction: column;
+		/*flex-direction: column;*/
 		justify-content: center;
 		width: 100%;
 		min-height: 100%;
@@ -95,7 +151,7 @@
 		width: 90%;
 		max-width: 450px;
 		position: relative;
-		padding: 0px;
+		
 		-webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
 		box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
 		text-align: center;
@@ -307,12 +363,6 @@
 		width:40%;
 	}
 </style>
-</body>
+</body> -->
 </html>
 
-
-
-
-
- 
-					

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css_for_all.css">
+      <link rel="stylesheet" type="text/css" href="cssformulaire.css">
+      
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="logo3.png" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="home2.html">Accueil</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="apropos.html">A propos</a>
+              </li>
+              <li class="nav-item ">
+                <div class="dropdown">
+              <button class="dropbtn">Mes alertes
+              <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+              <a href="alertes.html">Créer une alerte</a>
+              <a href="Historique_des_alertes.html">Historique des alertes</a>
+                
+            </div>
+              </li>
+               <li class="nav-item ">
+                <div class="dropdown">
+              <button class="nav-item dropbtn"> Mes favoris
+              <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+              <a href="favoris.html">Ajouter un favori</a>
+              <a href="Liste_des_favoris.html">Liste des favoris</a>
+            </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="formulaire.html">Formulaire</a>
+              </li>
+              <li> <a type="button" class="btn btn-danger btn-block bouton" href="PageConnexion.html"> Se déconnecter </a> </li>
+              
+            </div>
+          </li>
+        </div>
+      </li>
+
+             
+            </ul>
+          </div>
+        </div>
+     </nav>
+
+<title>YIIAQ</title>
+
+<body>
+ <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="airquality.png" id="icon" alt="User Icon" />
+    </div>
+    <h1>Enquête sur la qualité de l'air à HEI</h1>  
+  </div>
+</div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      <h4>Air et information</h4>
+  </div>
+</div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+      <p>Comment jugez-vous la qualité de l’air dans votre quartier, là où vous vivez ? </p>
+    <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Plutôt bonne</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Bonne</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Plutôt mauvaise</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Mauvaise</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Je ne sais pas</label>
+        </div>
+         
+
+      </div>
+    </div>
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+    <!-- Tabs Titles -->
+
+      <p>Avez-vous entendu parler de la « pollution de fond » ou « pollution ambiante » ?</p>
+    <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+          <label class="form-check-label" for="radio1">Oui</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+          <label class="form-check-label" for="radio2">Non</label>
+        </div>
+      </div>
+  </div>
+
+
+   <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <p>Avez-vous le sentiment d’être suffisamment informé.e en ce qui concerne : </p>
+
+    <div class="row form-group">
+        <!-- TABLE HEI -->
+          <table class="table table-hover">
+            <tbody>
+              
+              <tr>
+                <td></td>
+                <td>oui</td>
+                <td>non</td>
+               
+ 
+              </tr>
+           
+            
+              <tr >
+                <td>La qualité de l’air en général, intérieur comme extérieur ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>Les prévisions quotidiennes sur la qualité de l’air extérieur ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>Les effets de la pollution de l’air sur la santé ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>La qualité de l’air en général, intérieur comme extérieur ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>Les recommandations à prendre pour se protéger de la pollution au quotidien ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>Les pics de pollution ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>Les précautions à prendre en cas de pic de pollution ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>Les sources de pollution de l’air intérieur ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>Les sources de pollution de l’air extérieur ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>Les moyens pour avoir un air sain à l’intérieur ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>Les moyens pour éviter de polluer l’air extérieur ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+               <tr >
+                <td>Les actions publiques mises en place pour améliorer la qualité de l’air ?</td>
+                <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+                <td>
+                   <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+                    </div>
+                </td>
+
+                
+              </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      
+        <p>Selon vous, durant quelle(s) saison(s) l’air extérieur est le plus polluée ? Deux réponses au maximum. </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Printemps</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Eté</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Automne</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c1" id="ck1">
+          <label class="form-check-label" for="ck1">Hiver</label>
+        </div>
+       
+    </div>
+</div>
+
+<form method="post" >
+
+    <center class="b">
+      <input type="submit" class="fadeIn fourth " value="Retour">
+      <input type="submit" class="fadeIn fourth" value="Suivant"> 
+    </center>
+    </form>
+</body>
+</html>
