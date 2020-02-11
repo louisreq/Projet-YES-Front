@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <link rel="stylesheet" type="text/css" href="css_admin_for_all.css">
+
+ <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+<!--     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+   
+  
+
+      <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> -->
+
+     <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script -->
+      
+      
+
+
+<body>
+  <nav id="aa" class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="logo3.png" class= "logo3" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="home_admin.html">Accueil</a>
+              </li>
+             
+              
+              <li class="nav-item ">
+                <div class="dropdown">
+                  <button class="nav-item dropbtn">Alertes
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="créer_alerte_admin.html">Créer une alerte</a>
+                     <a href="alertes_utilisateurs.html">Alertes utilisateurs</a>
+                    <a href="Historique_des_alertes_admin.html">Historique des alertes</a>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="nav-item ">
+                <div class="dropdown">
+                  <button class="nav-item dropbtn"> Mes favoris
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="ajouter_favoris_admin.html">Ajouter un favori</a>
+                    <a href="Liste_des_favoris_admin.html">Liste des favoris</a>
+                  </div>
+                </div>
+              </li>
+               
+               <li class="nav-item ">
+                <div class="dropdown">
+                  <button class="nav-item dropbtn"> Formulaire
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="statistiquesformulaire.html">Statistiques du formulaire</a>
+                    <a href="repondre_formulaire_admin.html">Répondre au formulaire</a>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="administrateurs.html">Administrateurs</a>
+              </li>
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="capteurs.html">Capteurs</a>
+              </li>
+              
+              <li> <a type="button" class="btn btn-danger btn-block bouton" href="PageConnexion.html"> Déconnexion </a> </li>
+            </ul>
+          </div>
+        </div>
+     </nav>
+
+
+
+
+
+<title>YIIAQ</title>
+  <!-- Button trigger modal -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="inbox">
+      
+      <div class="container">
+           <div class="content-container clearfix">
+               <div class="col-md-12">
+                <br/>
+                   <h1 class="content-title">Mes alertes</h1>
+                    <div class="row ">
+            <!-- Search form -->
+                          <div class="active-cyan-10 mb-10 col-md-12">
+                            <input class="form-control " type="search" placeholder="Rechercher dans mes alertes" aria-label="Search">
+                          </div>
+                        </div>
+                        <br/>
+
+                    <table class="table table-inbox table-hover" >
+                           <thead>
+                              <tr>
+                                <th>Objet</th>
+                                <th>Salle</th>
+                                <th class="text-right">Date et Heure</th>
+                            
+                              </tr>
+                            </thead>
+                            
+                            <tbody>
+
+                              <tr class="unread" data-toggle="modal" data-target="#exampleModalLong">
+                                    
+                                  <a >
+                                 
+                                  <td class="objet_alerte ">Problème de ventilation en S102</td>
+                                  <td class="salle">S102</td>
+                                  <td class="view-message  text-right">20:10 AM</td>
+                              </tr></a>
+
+                               <tr class="unread" data-toggle="modal" data-target="#exampleModalLong">
+                                   <a >
+                               
+                                  <td class="objet_alerte ">Problème de ventilation en S102</td>
+                                  <td class="salle">S102</td>
+                                  <td class="view-message  text-right">9:27 AM</td>
+                              </tr></a>
+
+                               <tr class="unread" data-toggle="modal" data-target="#exampleModalLong">
+                                   <a > 
+                                  
+                                
+                                  <td class="objet_alerte ">Problème de température T154</td>
+                                  <td class="salle">T154</td>
+                                  <td class="view-message  text-right">7 fev</td>
+                              </tr></a>
+
+                               <tr class="unread" data-toggle="modal" data-target="#exampleModalLong">
+                                   <a > 
+                                  
+                               
+                                  <td class="objet_alerte ">Problème de ventilation en S102</td>
+                                  <td class="salle">S102</td>
+                                  <td class="view-message  text-right">20 jan</td>
+                              </tr></a>
+
+                              </tbody>
+                      </table>
+              
+               </div>
+           </div>
+       </div>
+     </div>
+   </div>
+
+                    <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Problème de ventilation en S102</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             L'air de la salle S102 ne se ventile pas
+            </div>
+            
+          </div>
+        </div>
+      </div>  
+  
+    <style type="text/css">
+      .mail-message-preview{
+        text-overflow: ellipsis;
+      }
+    </style>
+  </body>
+</html>

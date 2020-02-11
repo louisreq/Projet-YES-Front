@@ -7,15 +7,23 @@
 <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<!--     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="css_for_all.css">
+      <link rel="stylesheet" type="text/css" href="css_admin_for_all.css">
       
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+<body>
+  <nav id="aa" class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img class= "logo3"src="logo3.png" alt="">
+            <img src="logo3.png" class= "logo3" alt="">
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,17 +39,16 @@
               <li class="nav-item active">
                 <a class="nav-link" href="home2.html">Accueil</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="apropos.html">A propos</a>
-              </li>
+             
               
               <li class="nav-item ">
                 <div class="dropdown">
-              <button class="nav-item dropbtn">Mes alertes
+              <button class="nav-item dropbtn">Alertes
               <i class="fa fa-caret-down"></i>
               </button>
             <div class="dropdown-content">
               <a href="alertes.html">Créer une alerte</a>
+               <a href="alertes_utilisateurs.html">Alertes utilisateurs</a>
               <a href="Historique_des_alertes.html">Historique des alertes</a>
                 
             </div>
@@ -56,8 +63,21 @@
               <a href="Liste_des_favoris.html">Liste des favoris</a>
             </div>
               </li>
+               <li class="nav-item ">
+                <div class="dropdown">
+              <button class="nav-item dropbtn"> Formulaire
+              <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+              <a href="statistiquesformulaire.html">Statistiques du formulaire</a>
+              <a href="formulaire.html">Répondre au formulaire</a>
+            </div>
+              </li>
               <li class="nav-item ">
-                <a class="nav-link" href="formulaire.html">Formulaire</a>
+                <a class="nav-link" href="administrateurs.html">Administrateurs</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="capteurs.html">Capteurs</a>
               </li>
               <li> <a type="button" class="btn btn-danger btn-block bouton" href="PageConnexion.html"> Se déconnecter </a> </li>
             </ul>
@@ -65,52 +85,8 @@
         </div>
      </nav>
 
-<title>YIIAQ</title>
-</body>
 
 
-      <!-- Page Content -->
-      <div class="container">
-        <div class="row">
-          <section class="col-md-10 col-md-offset-3">
-                <h1 class="mt-4">Yncréa Intelligence Indoor Air Quality</h1>
-                <p></p>
-                <p></p>
-            <blockquote class="blockquote">
-              <p>
-                Bienvenu sur la plateforme Yncréa Indoor Air Quality. Vous pourrez ici trouver des infomrations sur la qualité de l'air dans les salles selon différents critères. Le taux d'humidité, concentration en carbon etc...
-                La recherche de la salle peut se faire directement sur la barre de recherche, ou bien en cliquant sur les logo de ton campus 
-              </p>
-              <footer class="blockquote-footer">Thierry OCCRE</footer>
-            </blockquote>
-          </section>
-
-        </div>
-
-        <div class="row ">
-            <!-- Search form -->
-          <div class="active-cyan-10 mb-10 col-md-12">
-            <input class="form-control " type="search" placeholder="Tapez ici votre recherche ( Campus, bâtiment, étage, salle etc...)" aria-label="Search">
-          </div>
-        </div>
-        <br/>
-
-
-
-      <!-- Select your Campus -->
-      <div class="row ">
-        <div class="col-xs-3 col-md-3 col-lg-4 hover02 column">
-            <a href="salle.html"> <img class="image" src="images/home1.png"> </a>
-         
-        </div>
-        <div class="col-xs-3 col-md-3 col-lg-4 hover02 column" ><a href="search.html"> <img class="image" src="images/home4.png"></a> </div>
-        <div class="col-xs-3 col-md-3 col-lg-4 hover02 column" > <a><img class="image1" src="images/home3.png"> </a> </div>
-
-      </div>
-
-      </div>
-
-    </body>
-
-    
+<button class=pull-right>Je suis à droite</button>
+  </body>
 </html>

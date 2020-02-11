@@ -87,34 +87,59 @@
            <div class="content-container clearfix">
                <div class="col-md-12">
                 <br/>
-                   <h1 class="content-title">Messages</h1>
-                <ul class="mail-list">
-                  <li data-toggle="modal" data-target="#exampleModalLong">
-                    
-                    <a >
-                        <!--  <span class="mail-sender">HEI</span> -->
-                         <span class="mail-subject">Problème de ventilation en S102</span>
-                         <span class="mail-message-preview">L'air de la salle S102 ne se ventile pas</span>
-                     </a>
-                  </li>
+                   <h1 class="content-title">Mes alertes</h1>
+                    <div class="row ">
+            <!-- Search form -->
+                          <div class="active-cyan-10 mb-10 col-md-12">
+                            <input class="form-control " type="search" placeholder="Rechercher dans mes alertes" aria-label="Search">
+                          </div>
+                        </div>
+                        <br/>
 
+                    <table class="table table-inbox table-hover" >
+                      <thead>
+                        <tr>
+                          <th>Objet</th>
+                          <th>Salle</th>
+                          <th class="text-right">Date et Heure</th>
+                          
+                         
+                         
+           
+                        </tr>
+                      </thead>      
+                      <tbody>
+                              <tr class="unread" data-toggle="modal" data-target="#exampleModalLong">
+                                 
+                                  <td class="objet_alerte ">Problème de ventilation en S102</td>
+                                  <td class="salle">S102</td>
+                                  <td class="view-message  text-right">20:10 AM</td>
+                              </tr>
 
-                  <li data-toggle="modal" data-target="#exampleModalLong">
-                     <a >
-                        <!--  <span class="mail-sender">HEI</span> -->
-                         <span class="mail-subject">Problème de température T154 </span>
-                         <span class="mail-message-preview">La température ambiante de la salle T154 est beaucoup trop chaude,Serait-il possible de baisser la température s'il...xszxsxsx dsc dsc fd chvhedc e ce cez cez c mzec ze czec ez c ze </span>
-                     </a>
-                  </li>
-                   <li>
-                       <a >
-                         <!--   <span class="mail-sender">HEI</span> -->
-                           <span class="mail-subject">Capteur ne marche pas</span>
-                           <span class="mail-message-preview">Bonjour, le capteur ne marche pas en T211</span>
-                       </a>
-                   </li>
-                       
-                   </ul>
+                               <tr class="unread" data-toggle="modal" data-target="#exampleModalLong">
+                                 
+                                  <td class="objet_alerte ">Problème de ventilation en S102</td>
+                                  <td class="salle">S102</td>
+                                  <td class="view-message  text-right">9:27 AM</td>
+                              </tr>
+
+                               <tr class="unread" data-toggle="modal" data-target="#exampleModalLong">
+                                  
+                                  <td class="objet_alerte ">Problème de température T154</td>
+                                  <td class="salle">T154</td>
+                                  <td class="view-message  text-right">7 fev</td>
+                              </tr>
+
+                               <tr class="unread" data-toggle="modal" data-target="#exampleModalLong">
+                               
+                                  <td class="objet_alerte ">Problème de ventilation en S102</td>
+                                  <td class="salle">S102</td>
+                                  <td class="view-message  text-right">20 jan</td>
+                              </tr>
+
+                              </tbody>
+                      </table>
+              
                </div>
            </div>
        </div>

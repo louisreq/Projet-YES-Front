@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+      <link href="css/animate.min.css" rel="stylesheet">
+      <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css_admin_for_all.css">
+      
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="logo3.png" class= "logo3" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="home_admin.html">Accueil</a>
+              </li>
+             
+              
+              <li class="nav-item ">
+                <div class="dropdown">
+                  <button class="nav-item dropbtn">Alertes
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="créer_alerte_admin.html">Créer une alerte</a>
+                     <a href="alertes_utilisateurs.html">Alertes utilisateurs</a>
+                    <a href="Historique_des_alertes_admin.html">Historique des alertes</a>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="nav-item ">
+                <div class="dropdown">
+                  <button class="nav-item dropbtn"> Mes favoris
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="ajouter_favoris_admin.html">Ajouter un favori</a>
+                    <a href="Liste_des_favoris_admin.html">Liste des favoris</a>
+                  </div>
+                </div>
+              </li>
+               
+               <li class="nav-item ">
+                <div class="dropdown">
+                  <button class="nav-item dropbtn"> Formulaire
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="statistiquesformulaire.html">Statistiques du formulaire</a>
+                    <a href="repondre_formulaire_admin.html">Répondre au formulaire</a>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="administrateurs.html">Administrateurs</a>
+              </li>
+              
+              <li class="nav-item active ">
+                <a class="nav-link" href="capteurs.html">Capteurs</a>
+              </li>
+              
+              <li> <a type="button" class="btn btn-danger btn-block bouton" href="PageConnexion.html"> Déconnexion </a> </li>
+            </ul>
+          </div>
+        </div>
+     </nav>
+
+<title>YIIAQ</title>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="inbox">
+      
+      <div class="container">
+           <div class="content-container clearfix">
+               <div class="col-md-12">
+                <br/>
+                   <h1 class="content-title">Liste des capteurs</h1>
+                   
+                   <input type="search" placeholder="Rechercher dans la liste de capteurs" class="form-control" />
+                   <br/>
+
+
+<div class="container">
+  <div class="row form-group">
+        <!-- TABLE HEI -->
+          <table class="table table-hover">
+            <thead>
+              <h3 style="margin-right: 4px;">Capteurs</h3>
+             
+             <button class="pull-right" style="height: 60% ;"><i class="fa fa-plus" ></i></button>
+             
+
+              <tr>
+                <th>Ecole</th>
+                <th>Etage</th>
+                <th>Salle</th>
+                <th>Type de capteurs</th>
+                <th></th>
+               
+ 
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-href="salle.html">
+                <td>Hei</td>
+                <td>2ème</td>
+                <td>S202</td>
+                <td>Temperature</td>
+                <td><button><i class="fa fa-trash" aria-hidden="true"></i></button>
+                 <button><i class="fa fa-edit" ></i></button>
+                </td>
+
+                
+              </tr>
+              <tr data-href="salle.html">
+                <td>Hei</td>
+                <td>1er</td>
+                <td>S10</td>
+                <td>Humidité</td>
+                <td><button><i class="fa fa-trash" aria-hidden="true"></i></button>
+                 <button><i class="fa fa-edit" ></i></button>
+                </td>
+              </tr>
+
+              <tr data-href="salle.html">
+                <td>Hei</td>
+                <td>1er</td>
+                <td>S12</td>
+                <td>Decibel</td>
+                <td><button><i class="fa fa-trash" aria-hidden="true"></i></button>
+                 <button><i class="fa fa-edit" ></i></button>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
