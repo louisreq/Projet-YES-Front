@@ -10,6 +10,10 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css_admin_for_all.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
 
 
 <body>
@@ -106,8 +110,8 @@
         <!-- TABLE HEI -->
           <table class="table table-hover">
             <thead>
-              <h3 style="margin-right: 4px;">Administrateur</h3>
-             <button class="pull-right" style="height: 60% ;"><i class="fa fa-plus" ></i></button>
+              <h3 style="margin-right: 4px;">Administrateurs</h3>
+             <button class="pull-right" data-toggle="modal" data-target="#exampleModalLong" style="height: 60% ;"><i class="fa fa-plus" ></i></button>
      
 
 
@@ -115,7 +119,7 @@
                 <th>Nom</th>
                 <th>Prénom</th>
                 <th>Email</th>
-                <th>Mot de passe</th>
+                
                 <th></th>
                
  
@@ -126,8 +130,8 @@
                 <td>drogou</td>
                 <td>benoit</td>
                 <td>benoit.drogou@hei.yncrea.fr</td>
-                <td>azerty</td>
-                <td><button><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                
+                <td><button data-toggle="modal" data-target="#exampleModalLong1"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
 
 
                 
@@ -136,19 +140,142 @@
                 <td>requillart</td>
                 <td>louis</td>
                 <td>louis.requillart</td>
-                <td>azerty</td>
-                <td><button><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                
+                <td><button data-toggle="modal" data-target="#exampleModalLong1"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
               </tr>
               <tr data-href="salle.html">
                 <td>B</td>
                 <td>yassir</td>
                 <td>dsczscfez</td>
-                <td>dzedce</td>
-                <td><button><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                
+                <td><button data-toggle="modal" data-target="#exampleModalLong1 "><i class="fa fa-trash" aria-hidden="true"></i></button></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-      
+                  <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Ajouter un administrateur</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Pour ajouter un administrateur, entrez une adresse email dans l'onglet ci-dessous: 
+            
+            <div class="wrapper fadeInDown">
+          
+              <form method="post" >
+              <input type="text" id="adresse_mail" class="fadeIn fourth" name="adresse_mail" placeholder="Adresse mail" required>
+              <input type="submit" class="fadeIn seventh" value="Ajouter"> <!-- rediriger vers la page de connexion -->
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div> 
+    </div> 
 
+
+       <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong1Title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLong1Title">Supprimer un administrateur</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Etes-vous sûr de vouloir supprimer cet administrateur?
+            
+            <div class="wrapper fadeInDown">
+          
+              <form method="post" >
+ 
+              <input type="submit" class="fadeIn seventh" value="oui"> 
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>  
+  
+    <style type="text/css">
+      .mail-message-preview{
+        text-overflow: ellipsis;
+      }
+   .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+   text-align: center;}
+
+
+     input[type=submit], input[type=reset]{
+    background-color: #4C4B4A;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  input[type=text], select, option {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  input[type=text]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+  }
+
+  input[type=text]::placeholder {
+    color: #cccccc;
+  }
+
+ 
+</style>
+  </body>
+  </html>
