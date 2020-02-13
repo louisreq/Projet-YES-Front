@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!--    <link href="css/animate.min.css" rel="stylesheet">-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.js" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css_for_all.css">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+
+
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo3" src="logo3.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="Home">Accueil</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="apropos.html">A propos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <div class="dropdown">
+                            <button class="dropbtn">Mes alertes
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+
+                            <div class="dropdown-content">
+                                <a href="Create_Alerte">Créer une alerte</a>
+                                <a href="Historique_Alerte">Historique des alertes</a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="dropdown">
+                            <button class="nav-item dropbtn"> Mes favoris
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="Add_Favoris">Ajouter un favori</a>
+                                <a href="Liste_Favoris">Liste des favoris</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a type="button" class="btn btn-danger btn-block bouton" href="Deconnexion"> Se déconnecter </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <title>YIIAQ</title>
+</head>
+<body>
+
+
+<!-- Page Content --> <br/>
+<div class="container">
+    <div class="row form-group">
+
+        <section class="col-md-10">
+            <input type="search" placeholder="Rechercher d'autres salles" class="form-control" />
+                   
+
+        </section>
+        <section class="col-md-2 ">
+            <!-- Material checked -->
+            <a data-toggle='collapse' href='Salle' id='collapseExample1' class='text-center switch_to_favori btn btn-default' th:text="${ajouter_ou_supprimer}"></a>
+
+        </section>
+
+    </div>
+
+    <section class="row form-group" th:each="salle:${campus_with_the_selected_salle.getList_salles()}">
+        <!-- Search form -->
+
+        <div class="col-xs-3 col-sm-2 col-md-2">
+            <h3 class="display-3" th:text="${campus_with_the_selected_salle.campus_name}">HEI </h3>
+        </div>
+        <div class="col-xs-3 col-sm-4 col-md-4">
+            <h3 class="display-3" th:text="${salle.salle_name}">S213</h3>
+        </div>
+        <div class="col-xs-3 col-sm-4 col-md-6">
+            <h4 class="display-6" th:text="'Salle Bâtiment ' + ${salle.batiment_name} + ' - au ' + ${salle.etage_name}"> Salle Bâtiment Ségard - au 2ème étage</h4>
+        </div>
+        <p for="appt">Choisisez l'intervalle de temps pour la représentation des graphiques: </p>
+        <br/>
+        <p >Du</p> <input type="date" name="anniversaire" max="2021-01-01" min="2020-01-01"  value="2020-02-13"style="margin: 0px 5px 15px 5px;"><p >à</p> 
+        
+        <input type="time" name="wakeup"  value="08:00"style="margin: 0px 5px 15px 5px;">
+
+        Au <input type="date" name="anniversaire" max="2021-01-01" min="2020-01-01"  value="2020-02-13"style="margin: 0px 5px 15px 5px;"> à
+        <input type="time" name="wakeup"  value="18:00" style="margin: 0px 5px 15px 5px;">
+        <script type="text/javascript">
+
+
+            /*<![CDATA[*/
+            /**
+             * sends a request to the specified url from a form. this will change the window location.
+             * @param {string} path the path to send the post request to
+             * @param {object} params the paramiters to add to the url
+             * @param {string} [method=post] the method to use on the form
+             */
+
+            function post(params) {
+                var method='post';
+                // The rest of this code assumes you are not using a library.
+                // It can be made less wordy if you use one.
+                var form = document.createElement('form');
+                form.method = method;
+                // form.action = path;
+
+                for (var key in params) {
+                    if (params.hasOwnProperty(key)) {
+                        var hiddenField = document.createElement('input');
+                        hiddenField.type = 'hidden';
+                        hiddenField.name = key;
+                        hiddenField.value = params[key];
+                        form.appendChild(hiddenField);
+                    }
+                }
+                document.body.appendChild(form);
+                form.submit();
+            }
+
+            $(document).ready(function(){
+                $('#collapseExample1').on('click', function () {
+                    var text=$('#collapseExample1').text();
+                    if(text.includes("Supprimer")){
+                        post({switch_favori: 'del', salle_id:'[[${salle.getId()}]]'});
+                    } else{
+                        post({switch_favori: 'add', salle_id:'[[${salle.getId()}]]'});
+                    }
+                });
+            });
+            /*]]>*/
+        </script>
+    </section>
+
+
+
+    <!-- Select your Campus -->
+    <br>
+    <br>
+    <section class="row form-group">
+
+        <!-- Element CO2 -->
+        <div class="col-xs-4 col-sm-3 col-md-3">
+
+            <section class="row">
+
+                <div class="col-xs-6 col-sm-6 col-md-6 logo_img hover01" data-toggle="modal" data-target="#exampleModalLong"><a>
+                  <img src="images/co2_v3.png" alt="CO2" align="right">
+                </a></div>
+                    
+              
+
+                <div class="col-xs-6 col-sm-6 col-md-6 logo_text">
+                    <section class="row">
+                        <b>CO2</b>
+                    </section>
+                    <section class="row">
+                        <p>458ppm</p>
+                    </section>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Element Temperature  -->
+        
+        <div class="col-xs-4 col-sm-3 col-md-4">
+            <section class="row">
+
+                <div class="col-xs-6 col-sm-6 col-md-6 hover01 column" data-toggle="modal" data-target="#exampleModalLong"><a>
+                    <img src="images/hot_v3.png"  alt="Temperature" align="right"></a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 logo_text">
+                    <section class="row">
+                        <b>Temp.</b>
+                    </section>
+
+                    <section class="row">
+                        <p>25°C</p>
+                    </section>
+                </div>
+
+            </section>
+        </div>
+       
+
+
+        <!-- Element Humidity  -->
+
+        <div class="col-xs-4 col-sm-3 col-md-4" style="margin-bottom : 90px;">
+            <section class="row">
+
+                <div class="col-xs-6 col-sm-6 col-md-6 logo_img hover01" data-toggle="modal" data-target="#exampleModalLong"><a>
+                    <img src="images/humidity_v3.png" alt="Humidity" align="right">
+                </a></div>
+                <div class="col-xs-6 col-sm-6 col-md-6 logo_text">
+                    <section class="row">
+                        <b>Hum.</b>
+                    </section>
+
+                    <section class="row">
+                        <p>7%</p>
+                    </section>
+                </div>
+
+
+
+            </section>
+        </div>
+
+ <br/>
+
+
+
+ <div class="col-xs-2 col-sm-2 col-md-2"></div>
+        <!-- Element Luminosity  -->
+        
+
+        <div class="col-xs-4 col-sm-3 col-md-3" style="margin-bottom : 50px;" >
+            <section class="row">
+
+                <div class="col-xs-6 col-sm-6 col-md-6 logo_img hover01" data-toggle="modal" data-target="#exampleModalLong"><a>
+                    <img src="images/luminosity_v3.png" alt="Luminosity" align="right">
+                </a></div>
+                    
+               
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <section class="row">
+                        <b>Lum.</b>
+                    </section>
+
+                    <section class="row">
+                        <p>125lux</p>
+                    </section>
+                </div>
+
+            </section>
+        </div>
+
+
+       <div class="col-xs-1 col-sm-1 col-md-1"></div>
+
+        <!-- Element PM2.5  -->
+        <div class="col-xs-4 col-sm-3 col-md-3">
+            <section class="row">
+
+                <div class="col-xs-6 col-sm-6 col-md-6 logo_img hover01" data-toggle="modal" data-target="#exampleModalLong"><a>
+                    <img src="images/pm2.5_v3.jpg" alt="PM2,5" align="right">
+                </a></div>
+                    
+               
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <section class="row">
+                        <b>Qualité</b>
+                    </section>
+
+                    <section class="row">
+                        <p>0.11ppb</p>
+                    </section>
+                </div>
+
+            </section>
+        </div>
+
+    </section>
+
+</section>
+
+ <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Temperature en fonction du temps:</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                température en fonction du temps:
+            <img src="graphique1.jpg">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  <section class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4">
+                  
+   Formule de la tangente:   <button class="formule"><i class="fa fa-flask"></i></button>
+</div>
+
+    <div class="col-xs-4 col-sm-4 col-md-4">
+   Formule de pythagore:   <button class="formule"><i class="fa fa-flask"></i></button>
+</div>
+
+<div class="col-xs-4 col-sm-4 col-md-4">
+   Formule de thales:   <button class="formule"><i class="fa fa-flask"></i></button>
+</div>
+</section>
+<section class="row">
+   <br/>
+
+       <p> Si vous souhaitez extraire les données capteurs dans un Excel sur ce laps de temps:</p>
+<button id="" name="" style="margin:0px 4px 6px 6px;"class="btn btn-secondary">Extraire</button>
+</body>
+<style>
+    .formule{
+        margin: 10px;
+    }
+    .switch_to_favori{
+        padding-top: 12px;
+        margin-top: 20px;
+        background-color: #92badd;
+    }
+    .fa-heart-o{
+        border-radius: 50%;
+        background:#b4b4b4;
+    }
+    .fa-heart-o:hover{
+        background: #ffb3ba;
+    }
+    .fa-heart-on{
+        background: #ffb3ba;
+
+    }
+    .fa-heart-on:hover{
+        border-radius: 50%;
+        background:#b4b4b4;
+    }
+
+
+    p {
+        font-size: 17px
+    }
+    legend{
+        font-size: 25px
+    }
+
+    .image
+    {
+
+
+        width: 100%;
+        border-radius: 20px;
+        border:2px lightgrey solid;
+
+
+    }
+    .image1
+    {
+
+
+        width: 100%;
+        border-radius: 20px;
+        border:2px lightgrey solid;
+
+    }
+    .l2
+
+    {
+
+
+        width: 100%;
+
+    }
+
+
+    [class*="col-"] {
+        /*background-color: lightgreen;
+         border: 2px solid black;*/
+        border-radius: 6px;
+        line-height: 26px;
+        text-align: left;
+    }
+    .logo_text {
+        text-align: left;
+        vertical-align: bottom;
+        /*        display: flex;
+                justify-content: */
+    }
+    blockquote {
+        text-align: left;
+    }
+    /*      .logo_text b{
+            position: absolute;
+            bottom: 0;
+          }*/
+    /*      .logo_img img{
+            position: absolute;
+            right: 0;
+
+          }
+    */
+
+    span{
+        font-size: 35px
+
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .custom-checkbox {
+        /* Presentation */
+        font-size: 50px
+    }
+
+    /* Required Styling */
+
+    label input[type="checkbox"] {
+        display: none;
+    }
+
+    .custom-checkbox {
+        margin-left: 2em;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .custom-checkbox .glyphicon {
+        color: gold;
+        position: absolute;
+        top: 0.4em;
+        left: -1.25em;
+        font-size: 0.75em;
+    }
+
+    .custom-checkbox .glyphicon-star-empty {
+        color: gray;
+    }
+
+    .custom-checkbox .glyphicon-star {
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .custom-checkbox:hover .glyphicon-star{
+        opacity: 0.5;
+    }
+
+    .custom-checkbox input[type="checkbox"]:checked ~ .glyphicon-star {
+        opacity: 1;
+    }
+
+
+    /*.navbar {
+      overflow: hidden;
+     background-color: #333;
+    }*/
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /*.dropdown {
+      float: left;
+      overflow: hidden;
+    }*/
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    /*.navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }*/
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    ul.mail-list{
+        padding:0;
+        margin:0;
+        list-style:none;
+        margin-top:20px;
+    }
+    ul.mail-list li a{
+        display:block;
+        border-bottom:1px dotted #CFCFCF;
+        padding:20px;
+        text-decoration:none;
+    }
+    ul.mail-list li:last-child a{
+        border-bottom:none;
+    }
+    ul.mail-list li a:hover{
+        background-color:#DBF9FF;
+    }
+    ul.mail-list li span{
+        display:block;
+    }
+    ul.mail-list li span.mail-sender{
+        font-weight:600;
+        color:black;
+    }
+    ul.mail-list li span.mail-subject{
+        color:black;
+    }
+    ul.mail-list li span.mail-message-preview{
+        display:block;
+        color:black;
+    }
+    .mail-search{
+        border-bottom-color:#7FBCC9!important;
+    }
+    .mail-message-preview{
+        font-size: 18px;
+    }
+    .mail-subject{
+        font-size: 22px ;
+        font-weight: bold;
+    }
+    .mail-sender{
+        font-size: 30px ;
+        font-weight: bold;
+
+    }
+
+
+    /* Gray Scale */
+    .hover08 a img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .hover08 a:hover img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+
+    .hover01 a img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .hover01 a:hover img {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    /* Zoom In #2 */
+    .hover02 a img {
+        width: 100%;
+        height: auto;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .hover02 a:hover img {
+        width: 100px;
+    }
+
+    .bouton{
+        height: 40px;
+        line-height: 10px;
+
+    }
+</style>
+</html>
