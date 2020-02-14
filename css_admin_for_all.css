@@ -1,4 +1,8 @@
-       
+ .navbar
+{
+  background-color: #0DA2E0;
+}
+      
 #aa{
 	background-color: steelblue;
 }
@@ -11,7 +15,7 @@ legend{
 
 .logo3
 {
-    width: 70%;
+    width: 60%;
 }
 
   .image
