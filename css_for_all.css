@@ -2,6 +2,7 @@
 {
   background-color: #0DA2E0;
 }
+
 /*.fa-heart-o{
   border-radius: 50%;
   background:#b4b4b4;
@@ -279,7 +280,14 @@ ul.mail-list li span.mail-message-preview{
 .hover02 a:hover img {
   width: 350px;
 }
-
+.hover03 a img {
+ 
+  height: auto;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover03 a:hover img {
+  width: 280px;
  .bouton{
                       height: 40px;
                       line-height: 10px;
